@@ -1,4 +1,10 @@
-.metadata/
-build/
-*.log
+.metadata
 bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+junit-results/
+build/
