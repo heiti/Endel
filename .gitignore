@@ -8,3 +8,4 @@ tmp/
 local.properties
 junit-results/
 build/
+/RemoteSystemTempFiles/
