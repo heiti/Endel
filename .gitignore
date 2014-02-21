@@ -1,12 +1,4 @@
-*.class
-*.classpath
-*.project
 .metadata/
 build/
 *.log
 bin/
-
-# Package Files #
-*.jar
-*.war
-*.ear
