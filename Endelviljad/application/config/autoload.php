@@ -66,6 +66,9 @@ $autoload['libraries'] = array();
 
 $autoload['helper'] = array();
 
+/* autoload the utility_helper.php for assets */
+
+$autoload['helper'] = array('form', 'url', 'utility');
 
 /*
 | -------------------------------------------------------------------

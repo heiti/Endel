@@ -38,8 +38,10 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+$route['default_controller'] = 'pages/view';
+$route['(:any)'] = 'pages/view/$1';
+/* route for assets files */
+$route['assets/(:any)'] = 'assets/$1';
 
 
 /* End of file routes.php */
