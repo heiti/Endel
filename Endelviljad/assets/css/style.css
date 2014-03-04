@@ -10,7 +10,7 @@ body {
 
 #container {
 	position: relative;
-	width: 1000px;
+	width: 900px;
 	margin: 0px auto;
 	padding: 0px;
 }
@@ -18,7 +18,7 @@ body {
 #header{
 	border-bottom: 1px solid #dfe2e1;
 	position: relative;
-	min-height: 180px;
+	min-height: 130px;
 	margin-bottom: 25px
 	
 
@@ -26,23 +26,60 @@ body {
 #header .logo {
 	position: absolute;
 	left: -10px;
-	bottom: 17px;
+	bottom: 5px;
 	background: url("../images/logo.png");
-	width:440px;
-	height:110px;
+	width:350px;
+	height:80px;
 	background-repeat:no-repeat;
 	text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
 
+/* buttons */
+#auth{
+	position:absolute;
+	top:20px;
+	right:25px;
+}
 
+.button.button{
+	display: inline-block;
+	padding: 7px 10px 8px 10px;
+	margin-left: 10px;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 12px;
+	color:white;
+	vertical-align: baseline;
+}
+.login.button{
+	background-color:  #ffaa44;
+}
+.login.button:hover{
+	background: #ff9009;
+}
+
+.logout.button{
+	background-color: #808080; 
+
+}
+.logout.button:hover{
+	background: #585858;
+}
+
+#column-main {
+	position: relative;
+	float: left;
+	width: 900px;
+	margin: 0px auto;
+	padding: 0px;
+}
 
 
 #column-left {
 	position: relative;
 	float: left;
-	width: 850px;
+	width: 200px;
 	margin: 0px auto;
 	padding: 0px;
 }
@@ -50,7 +87,7 @@ body {
 #column-right {
 	position: relative;
 	float: right;
-	width: 240px;
+	width: 680px;
 	margin: 0px auto;
 	padding: 0px;
 	text-align: center;
@@ -59,23 +96,25 @@ body {
 
 /* Navigation bar */
 ul#list-nav {
+	position:absolute;
+	bottom:15px;
+	right:-60px;
 	margin: 0px;
 	padding: 0;
 	list-style: none;
-	width: 850px;
+	width: 500px;
 }
 
 ul#list-nav li {
 	display: inline
 }
 
-
 ul#list-nav li a {
 	text-decoration: none;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	font-size: 2em;
+	font-size: 170%;
 	padding:2px 0;
-	width: 211px;
+	width: 150px;
 	height: 30px;
 	color: #13642b;
 	float: left;
@@ -83,11 +122,12 @@ ul#list-nav li a {
 	border-right: 1px solid #dfe2e1;
 	
 }
+ul#list-nav li.active a{
+	color: #990000
+}
 ul#list-nav li:last-child a{
 	border-right:0px
 }
-
-
 
 ul#list-nav li a:hover {
 	color: #990000
@@ -105,10 +145,25 @@ ul#list-nav li a:hover {
 }
 
 #content-main {
-	width: 850px;
+	width: 900px;
 	height: 630px;
 	text-align: center;
 	font-size: 2em;
+	color: #13642b;
+}
+#content-about {
+	width: 900px;
+	height: 400px;
+	text-align: left;
+	font-size: 1em;
+	color: #13642b;
+}
+
+#content-prod{
+	width: 700px;
+	height: 300px;
+	text-align: left;
+	font-size: 1em;
 	color: #13642b;
 }
 
@@ -116,7 +171,7 @@ ul#list-nav li a:hover {
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 1060px;
+	width: 900px;
 	height: 150px;
 	padding: 10px;
 	background: #f2f2f2;
@@ -126,7 +181,7 @@ ul#list-nav li a:hover {
 	float: left;
 	color: #5b5b5b;
 	text-align: center;
-	width: 800px;
+	width: 600px;
 	height: 150px;
 }
 

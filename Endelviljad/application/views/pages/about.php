@@ -7,10 +7,18 @@
 			<!-- logo -->
 			<a href="/" class="logo">endelviljad</a>
 			
+			<!-- login buttons -->
+			<div id=auth>
+				<form action="http://google.com">
+					<button id="logout_button" class= "logout button" href="login.html">Google </button>
+				</form>
 			
+			</div>
+			
+			<!-- navigation -->
 			<ul id="list-nav">
 				<li><a href="index.html">Avaleht</a></li>
-				<li><a href="about.html">Meist</a></li>
+				<li class="active"><a href="about.html">Meist</a></li>
 				<li><a href="products.html">Kaubad</a></li>
 			</ul>
 			
@@ -18,29 +26,31 @@
 		
 		<!-- end header -->
 
+		
+		
 
-		<div id="column-left">
-
-			
-
-
+		<div id="column-main">
 			<div id="content">
 
-				<div id="content-main">
-					<h1>See on sigadele nagu ŠOKULAAD!</h1>
+				<div id="content-about">
+					<h2>Endel Viljad on...</h2>
 					<p>
-						<img src="<?php echo asset_url();?>images/kiwi.jpg" />
-						<!--vana versioon pildi jaoks 
-						<img src="images/kiwi.jpg" width="850" height="313"
-							alt="kiivi" /> 
-						-->
+						<img src="images/fruit.jpg" width="900" height="313"
+							alt="Puuviljad" />
+					</p>
+					
+				</div>
+				<div id="content-about">
+					<h2>Meie kliendid on...</h2>
+					<p>
+						<img src="images/us.jpg" width="900" height="313" alt="Meie" />
+					</p>
+				</div>
+				<div id="content-about">
+					<h2>Heade viljade maailm:</h2>
+					<p>
+						<img src="images/strawberry.jpg" width="900" height="313" alt="Puuviljad" />
 					</p>
 				</div>
 			</div>
-
-
-		</div>
-
-		<div id="column-right">
-			
 		</div>
