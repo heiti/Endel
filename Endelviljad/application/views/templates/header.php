@@ -5,9 +5,8 @@
 
 
 
-	<head>
-		<title><?php echo $title ?> Endel viljad</title>
-		<!-- viide utility helperiga style.css failile -->
-		<link rel="stylesheet" type="text/css" href="<?php echo asset_url();?>css/style.css">
-		
-	</head>
+<head>
+	title><?php echo $title ?>Endel viljad</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+</head>

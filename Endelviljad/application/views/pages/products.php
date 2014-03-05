@@ -31,9 +31,9 @@
 
 		<div id="column-left">
 			tere meist meist meist mere maailm tere maailm tere maailm 
-			siia kÃ¤ib kÃµik otsinguasi
+			siia käib kõik otsinguasi
 			nii lahe otsida
-			kÃµikide asjade seast
+			kõikide asjade seast
 		</div>
 
 		<div id="column-right">
