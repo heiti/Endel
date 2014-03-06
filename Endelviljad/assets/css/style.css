@@ -2,7 +2,7 @@
 General css rules
 */
 body {
-	background-image: url("../images/bg_gradient.png");
+	background-image: url("http://endel.mt.ut.ee/assets/img/bg_gradient.png");
 	background-repeat: repeat-x;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 12px;
@@ -27,7 +27,7 @@ body {
 	position: absolute;
 	left: -10px;
 	bottom: 5px;
-	background: url("../images/logo.png");
+	background: url("http://endel.mt.ut.ee/assets/img/logo.png");
 	width:350px;
 	height:80px;
 	background-repeat:no-repeat;
