@@ -2,10 +2,10 @@
 	
 	class Home extends CI_Controller {
 	
-		public function index($page = 'home_view') {
+		public function index($page = 'home') {
 		
 			$this->load->view('templates/header_temp');
-			$this->load->view('pages/'.$page);
+			$this->load->view('pages/'.$page.'_view');
 			$this->load->view('templates/footer_temp');
 			
 		}

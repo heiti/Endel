@@ -24,8 +24,8 @@
 				<!-- navigation -->
 				<ul id="list-nav">
 					<li class="active"><a href="<?php echo base_url() ?>">Avaleht</a></li>
-					<li><a href="<?php echo base_url("application/controllers/about") ?>">Meist</a></li>
-					<li><a href="products.html">Kaubad</a></li>
+					<li><a href="<?php echo base_url("about") ?>">Meist</a></li>
+					<li><a href="<?php echo base_url("home/index/products") ?>">Kaubad</a></li>
 				</ul>
 			
 			</div>
