@@ -15,7 +15,7 @@
 			
 				<!-- login buttons -->
 				<div id=auth>
-					<form action="http://google.com">
+					<form action="<?php echo base_url() ?>">
 						<button id="logout_button" class= "logout button" href="login.html">Google </button>
 					</form>
 			
@@ -23,9 +23,9 @@
 			
 				<!-- navigation -->
 				<ul id="list-nav">
-					<li class="active"><a href="<?php echo base_url() ?>">Avaleht</a></li>
+					<li><a href="<?php echo base_url() ?>">Avaleht</a></li>
 					<li><a href="<?php echo base_url("about") ?>">Meist</a></li>
-					<li><a href="<?php echo base_url("home/index/products") ?>">Kaubad</a></li>
+					<li><a href="<?php echo base_url("products") ?>">Kaubad</a></li>
 				</ul>
 			
 			</div>
