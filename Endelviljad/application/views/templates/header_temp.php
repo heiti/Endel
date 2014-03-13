@@ -15,7 +15,7 @@
 			
 				<!-- login buttons -->
 				<div id=auth>
-					<form action="<?php echo base_url() ?>">
+					<form action="http://google.com">
 						<button id="logout_button" class= "logout button" href="login.html">Google </button>
 					</form>
 			
