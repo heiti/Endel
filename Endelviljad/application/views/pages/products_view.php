@@ -14,6 +14,12 @@
 					<p>
 						<img src="<?php echo base_url("assets/img/us.jpg") ?>" width="670" height="213"
 							alt="Meie" />
+						<?php  echo "andmed Endel andmebaasist: <br/> ";
+							foreach($endelprod as $prod){
+								echo $prod->id."  ".$prod->müüja_id."   ". $prod->kogus."   ". $prod->hind."<br/>";
+							}
+						
+						?>
 					</p>
 				</div>
 

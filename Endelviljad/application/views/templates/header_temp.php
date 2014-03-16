@@ -3,6 +3,7 @@
 	<head>
 		<title>Endel Viljad</title>
 		<link rel="stylesheet" href="<?php echo base_url()."assets/css/style.css" ?>" type="text/css" />
+		<meta name="description" content="Endel Viljad - kõik puu- ja juurviljad ühest kohast">
 	</head>
 	<body>
 		<div id="container">
