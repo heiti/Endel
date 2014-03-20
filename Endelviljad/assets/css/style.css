@@ -5,8 +5,17 @@ body {
 	background-image: url("http://endel.mt.ut.ee/assets/img/bg_gradient.png");
 	background-repeat: repeat-x;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 75%;
+	margin:0;
+	padding:0;
 }
+/*Hides input type="number" arrows*/
+form input[type='number']::-webkit-outer-spin-button,
+form input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 #container {
 	position: relative;
@@ -38,9 +47,23 @@ body {
 
 /* buttons */
 #auth{
-	position:absolute;
-	top:20px;
-	right:25px;
+    position:absolute;
+    top:20px;
+    right:25px;
+}
+#auth .register_link{
+    padding-right:10px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color:white;
+    font-size: 12px;
+    
+}
+#auth .login_link{
+    padding-left:10px;
+    border-left: 1px solid #dfe2e1;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color:white;
+    font-size: 12px;
 }
 
 .button.button{
@@ -146,6 +169,7 @@ ul#list-nav li a:hover {
 #content {
 	margin-top: 10px;
 	padding-bottom: 10px;
+	width: 900px;
 }
 
 #content div {
@@ -170,11 +194,19 @@ ul#list-nav li a:hover {
 
 #content-prod{
 	width: 700px;
-	height: 300px;
+	height: 500px;
 	text-align: left;
 	font-size: 1em;
 	color: #13642b;
 }
+
+#content-addprod{
+        width: 300px;
+        height: 700px;
+        text-align: center;
+    
+}
+
 #content-cart{
 	margin-top: 30px;
 	margin-left: 50px;
@@ -208,6 +240,60 @@ ul#list-nav li a:hover {
 	color: #000000;
 }
 
+.reg_center{
+	margin:auto;
+	width:40%;
+	font-size: 1em;
+	color: #306754;
+}
+
+.reg_center h1{
+	padding:0em;
+	margin:0em;
+	line-height:1.2em;
+}
+
+#register-form{
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:1.2em;
+}
+
+.regUsr{
+  	margin-left:1em;
+  	
+}
+
+.regUsr_num{
+	margin-left:1em;
+  	
+}
+
+.reg_center input[type="text"]{
+	border:#a9a9a9 1px solid;
+	padding-right: 4px;
+  	padding-left: 4px;
+  	padding-bottom: 4px;
+  	padding-top: 4px;
+  	width: 70%;
+  }
+  
+.reg_center input[type="number"]{
+	border:#a9a9a9 1px solid;
+	padding-right: 4px;
+  	padding-left: 4px;
+  	padding-bottom: 4px;
+  	padding-top: 4px;
+  	width: 70%;
+  }
+  
+#reg-all{
+	margin-left:14em;
+	color:#FF2400;
+	border-bottom:#C11B17 1px solid;
+	line-height:2em;
+	
+}
+
 
 #footer {
 	float: left;
@@ -225,15 +311,4 @@ ul#list-nav li a:hover {
 	text-align: center;
 	width: 600px;
 	height: 150px;
-}
-
-#footer-map {
-	float: left;
-	height: 150px;
-	width: 230px;
-}
-
-#bottom {
-	clear: both;
-	text-align: center;
 }
