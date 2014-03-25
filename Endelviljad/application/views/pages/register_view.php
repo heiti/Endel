@@ -1,3 +1,6 @@
+
+<div id="content">
+    
 <div class="reg_center">
 	<h1>Kasutajaks registreerimine</h1>
 	<span id="reg-all">Palun täitke kõik väljad<sup>*</sup></span>

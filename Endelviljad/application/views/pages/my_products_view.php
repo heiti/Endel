@@ -1,29 +1,34 @@
+<div id="content">
+    <div id="column-left">
+        <h3>Siia tulevad funktsioonid</h3>
+    </div>
 
-		<div id="column-left">
-			kokku 5 toodet <br/>
-			keskmine hind 500 eurot/kg <br/>
-			Saadaval: kõik<br/>
-		</div>
-
-		<div id="column-right">
-			<div id="content">
-
-				<div id="content-prod">
-					<h1>Toode 1</h1>
-					<p>
-						<img src="<?php echo base_url("assets/img/us.jpg") ?>" width="670" height="213"
-							alt="Meie" />
-					</p>
-				</div>
-
-				<div id="content-prod">
-					<h1>Toode 2</h1>
-					<p>
-						<img src="<?php echo base_url("assets/img/fruit.jpg") ?>" width="670" height="213"
-							alt="Puuviljad" />
-					</p>
-				</div>
+    <div id="column-right">
 
 
-			</div>
-		</div>
+        <div id="content-prod">
+            <h1>Minu tooted</h1>
+            <p>
+               <?php
+               ini_set('error_reporting', E_ALL);
+               ini_set('display_errors', 'On');  //On or Off
+               echo $message;
+               $this->table->set_heading(array('', 'Vili', 'Sort', 'Kategooria', 'Kogus', 'Hind', 'Asukoht'));
+               foreach($products as $prod){
+                   $this->table->add_row($prod);
+               }
+               echo $this->table->generate();
+               echo form_open('addproduct');
+               echo form_submit('lisatoode', 'Lisa uus toode');
+               echo form_close();
+               ?>
+               
+            </p>
+        </div>
+
+        
+
+
+        
+        
+    </div>

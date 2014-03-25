@@ -6,14 +6,14 @@
         <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" type="text/css"></link>
         <script src="<?php echo base_url("assets/js/mainScript.js"); ?>" type="text/javascript"></script>
         <title>Endel Viljad</title>
-        
+
     </head>
     <body>
-    
-   
-	
+
+
+
         <div id="container">
-        
+
 
             <!-- begin header -->
             <div id="header">
@@ -23,15 +23,30 @@
 
                 <!-- sign up and login links -->
                 <div id="auth">
-                        <!-- kunagi 
-                        <a href="<?php echo base_url(); ?>logingoogle">Click here to login with Google</a> 
-                        --> 
-                   <a href="<?php echo base_url("register"); ?>" class="register_link">Registreeru</a>
-                   <a href="<?php echo base_url("login"); ?>" class="login_link">Logi sisse</a>
+                     
+
+                    <?php 
+                    if ($this->session->userdata('is_logged_in')){
+                        /*<?php echo $this->session->userdata('email');?> */
+                       echo '<a href="'.base_url("myproducts").'" class="userpanel_link">Minu tehingud</a>';
+                       echo '<a href="'.base_url("myproducts").'" class="userpanel_link">Minu tooted</a>';
+                       echo '<a href="'.base_url("login").'"class="register_link">Kasutaja</a>';
+                       echo '<a href="'.base_url("logout").'" class="login_link">Välju</a>';
+                    }
+                     else{
+                        echo '<a href="'.base_url("register").'" class="register_link">Registreeru</a>';
+                        echo '<a href="'.base_url("login").'" class="login_link">Logi sisse</a>';
+                    }
                    
+                   ?>
+                   <!-- google login button-->
+                    <a href="<?php echo base_url(); ?>logingoogle" class="">Click here to login with Google</a> 
+                    
+                    
+
                 </div>
-				<!-- /sign up and login buttons-->
-				
+                <!-- /sign up and login buttons-->
+
                 <!-- navigation -->
                 <ul id="list-nav">
                     <li><a href="<?php echo base_url(); ?>">Avaleht</a></li>
@@ -39,7 +54,7 @@
                     <li><a href="<?php echo base_url("products"); ?>">Kaubad</a></li>
                 </ul>
                 <!-- /navigation -->
-                
+
 
 
             </div>

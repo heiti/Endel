@@ -1,9 +1,11 @@
-<div id="column-main">
-    <div id="content">
+<div id="content">
+    
+    <div id="column-main">
 
         <div id="content-main">
-            <?php
             
+            <?php
+            print_r($this->session->flashdata('autherror'));
             echo form_open('login/login_validation');
             echo validation_errors();
 
@@ -19,11 +21,8 @@
             echo form_submit('login_submit', 'Logi sisse');
             echo "</p>";
 
-            //echo "<p>Pole kasutajat? registreeri <a href='" . base_url() . "register" . "'>siin</a>!</p>";
-            //echo "<p>Unustasid <a href='" . base_url() . "login/forgotPassword" . "'>parooli</a>?</p>";
-
             echo form_close();
             ?>
+            <a href="<?php echo base_url("register"); ?>" class="register_link" span style="color: #990000;"> Registreeru</a>
         </div>
     </div>
-</div>

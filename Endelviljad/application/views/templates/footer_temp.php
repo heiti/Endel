@@ -1,4 +1,6 @@
-
+                <div class="footer-push"></div>
+                </div> 
+                
 		<div id="footer">
 			<div id="footer-info">
 			<br/> AS Endel Viljad

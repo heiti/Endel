@@ -25,7 +25,8 @@ class Logingoogle extends CI_Controller {
                     'pref/language',
                     'namePerson/friendly', //Alias/Username
                 );
-
+                
+                
                 $openid->returnUrl = base_url(); // . 'google_openid'; //Return url to catch response from server
                 header('Location: ' . $openid->authUrl());
             } elseif ($_GET['openid_mode'] == 'cancel') {

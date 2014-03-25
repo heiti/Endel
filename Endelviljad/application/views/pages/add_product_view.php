@@ -1,11 +1,10 @@
+<div id="content">
 <div id="column-right">
-    <div id="content">
+    
         <div id="content-addprod">
             <?php
-            echo $message;
+            print_r($this->session->flashdata('confirmation'));
             echo $error;
-
-            
             
             echo validation_errors();
             echo form_open_multipart("addproduct/insert");
@@ -25,13 +24,14 @@
             $data = array(
                 'name' => 'vili',
                 'id' => 'vili'
-            );echo form_input($data, $this->input->post('vili'))."</p>";
-            
+            );
+            echo form_input($data, $this->input->post('vili'))."</p>";
             echo "<p>Sort: ";
             $data = array(
                 'name' => 'sort',
                 'id' => 'sort'
-            ); echo form_input($data, $this->input->post('sort'))."</p>";
+            ); 
+            echo form_input($data, $this->input->post('sort'))."</p>";
             
             echo "<p>Kogus: ";
             $data = array(
@@ -62,4 +62,3 @@
 
         </div>
     </div>
-</div>
