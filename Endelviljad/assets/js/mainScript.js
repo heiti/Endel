@@ -1,52 +1,25 @@
-function validateForm()
+//Valideerib vormi välju
+function validateForm(fName)
 {
-	var validate=isNumber();
-	var fields=["usrName","usrRegCode","usrAdrStreet","usrAdrHouseNr","usrAdrPostalCode","usrCounty","usrTel","usrMob","usrRoll","usrAccountNr","usrEmail"];
-	if(validate==false)
-	{	
-		alert("Punasega märgitud väljal peab olema numbriline väärtus");
-		return false;
-	}
-	for(var i=0;i<fields.length;i++)
+	var elements=document.forms[fName].elements;//Vormi väljade list
+	var validate=true;
+	//Kontrollime, kas kõik väljad on täidetud
+	for(var i=0;i<elements.length-2;i++)//-2, sest elementideks loeb ka 'Registreeri' ja 'Tühjenda' nupud
 	{
-		var f=document.getElementById(fields[i]);
-		if(f.value==null || f.value=="")
+		var el = elements[i];
+		if(el.value==null || el.value=="")
 		{
-			f.style.borderColor="#FF0000";
-			if(validate==true)
-			{
-				validate=false;
-			}
+		validate=false;
+		el.style.backgroundColor="#FF0000";
+		el.style.opacity=0.3;
+		document.getElementById("error").style.display="block";
 		}
 	}
 	if(validate==true)
 	{
-		alert("Ok");
-		return validate;
-		document.getElementById("register-form").innerHTML="Aitäh, et registreerisite!\nTeie registreerimisvorm edukualt saadetud ja me võtame Teiega ühendust 2 tööpäeva jooksul."
+		document.getElementById("register").style.display="none";
+		document.getElementById("form_sent").style.display="block";
 	}
-	else
-	{
-		alert("Kõik väljad on kohustuslik. Palun täitke punasega märgitud väljad ja vajutage uuesti nupule 'Registreeri'.");
-		return validate;
-	}
-}
+return validate;
 
-function isNumber()
-{
-	var x=true;
-	var field_num=document.getElementsByClassName("regUsr_num");
-	for(var i=0;i<field_num.length;i++)
-	{
-		if(isNaN(field_num[i].value))
-		{
-			field_num[i].style.borderColor="#FF0000";
-			if(x==true)
-			{
-				x=false;
-			}
-		}
-		
-	}
-	return x;
 }

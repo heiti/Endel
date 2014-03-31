@@ -1,3 +1,4 @@
+<!--Content-->
 <div id="content">
     
     <div id="column-main">
@@ -23,6 +24,8 @@
 
             echo form_close();
             ?>
-            <a href="<?php echo base_url("register"); ?>" class="register_link" span style="color: #990000;"> Registreeru</a>
+            <a href="<?php echo base_url("register"); ?>" class="register_link" style="color: #990000;"> Registreeru</a>
         </div>
     </div>
+</div>
+<!--/Content-->

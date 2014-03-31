@@ -1,3 +1,4 @@
+<!--content-->
 <div id="content">
 
     <div id="content-cart">
@@ -30,5 +31,6 @@
 
 
     </div>
-
+</div>
+<!--content-->
 

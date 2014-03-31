@@ -1,5 +1,5 @@
 
-
+<!--Content-->
 <div id="content">
     <div id="column-left">
         Kokku 5 toodet<br/>
@@ -32,3 +32,5 @@
 
 
     </div>
+</div>
+<!--/Content-->

@@ -1,3 +1,4 @@
+<!--content-->
 <div id="content">
 
     <div id="column-main">
@@ -12,4 +13,5 @@
         </div>
 
     </div>
-
+</div>
+<!--/content-->

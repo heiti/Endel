@@ -9,6 +9,8 @@ if (!defined('BASEPATH'))
 class Transactions extends CI_Controller {
     private $sessiondata = array();
     public function index() {
+        if ($this->session->userdata('is_logged_in')) {
+            
         $this->load->model('users_model');
         $this->sessiondata = array(
             'id' => $this->session->userdata('id'),
@@ -20,9 +22,7 @@ class Transactions extends CI_Controller {
             'buyer' => $this->session->userdata('buyer'),
             'isLoggedIn' => $this->session->userdata('is_logged_in'),
         );
- 
-        if ($this->session->userdata('is_logged_in')) {
-            //$data['info'] = $this->users_model->getuserinfo($this->session->userdata('email'));
+           //$data['info'] = $this->users_model->getuserinfo($this->session->userdata('email'));
 
             $this->load->view('templates/header_temp');
             $this->load->view('pages/transactions_view', $this->sessiondata);

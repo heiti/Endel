@@ -10,22 +10,22 @@ class Myproducts extends CI_Controller {
         $data = array(
             'message' => ''
         );
-       $data['products'] = $this->myproductsmodel->getMyProducts($this->session->userdata['id']);
-        if(count($data['products'])==0){
+        $data['products'] = $this->myproductsmodel->getMyProducts($this->session->userdata['id']);
+        if (count($data['products']) == 0) {
             $data['message'] = 'Sul pole tooteid müügil';
         }
-        
+
         if ($this->session->userdata('is_logged_in')) {
             $this->load->view('templates/header_temp');
             $this->load->view('pages/my_products_view', $data);
             $this->load->view('templates/footer_temp');
-        } else{
+        } else {
             $this->session->set_userdata('redirect', 'myproducts'); //salvestab selle lehe, et logimisel tagasi redirectiks
             $this->session->set_flashdata('autherror', 'Antud lehe nägemiseks on vajalik sisselogimine:');
             redirect('login');
         }
-       
     }
+
 }
 
 ?>
