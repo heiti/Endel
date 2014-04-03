@@ -18,6 +18,7 @@
 		
 	</div>
 	<!-- /End container -->
-	
+<script src="<?php echo base_url("assets/js/mainScript.js"); ?>" type="text/javascript"></script>
+<script src="<?php echo base_url("assets/js/changeUserData.js"); ?>" type="text/javascript"></script>
 </body>
 </html>

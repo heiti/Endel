@@ -14,7 +14,7 @@
             'name' => 'name',
             'id' => 'name'
         );
-        echo form_input($data, $this->input->post('name')) . "</p>";
+        echo form_input($data, $this->input->post('name')) .'   '.$andmed->name. "</p>";
         
         echo '<p>Email: ';     
         $data = array(

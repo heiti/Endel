@@ -71,6 +71,14 @@
 	<span>Kõik väljad ei ole täidetud. Palun täitke kõik punasega märgitud väljad!</span>
 </div>
 
+<!--Kui puudub ühendus serveriga, siis kuvatakse peale submit blokk 'noconnection'
+<div id="noconnection">
+	<span>Tundub, et internetiühendus puudub hetkel.<br /> 
+	Registreerimisvorm on salvestatud ja saadetakse, kui ühendus taastub!<br />
+	Täname!
+</div>
+-->
+
 <!--Kui vorm on edukalt saadetud, siis kuvatakse blokk 'form_sent'-->
 <div <?php if(isset($_GET['submit_msg'])) { echo 'style="display: block"'; } ?>id="form_sent">
 	<p>

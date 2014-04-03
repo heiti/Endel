@@ -1,0 +1,19 @@
+<ifModule mod_headers.c>
+
+# Turn on Expires and set default expires to 0 hour
+ExpiresActive On
+ExpiresDefault A0
+
+# Set up 1 minute caching on JS and CSS files
+<FilesMatch "\.(js|css)$">
+ExpiresDefault A60
+Header append Cache-Control "proxy-revalidate"
+</FilesMatch>
+
+# Set up caching on image files for 1 week
+<filesMatch "\.(gif|jpg|jpeg|png)$">
+ExpiresDefault A604800
+Header append Cache-Control "public"
+</filesMatch>
+
+</ifModule>

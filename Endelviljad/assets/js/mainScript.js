@@ -23,3 +23,16 @@ function validateForm(fName)
 return validate;
 
 }
+/*
+//Kontrollime, kas kasutaja on onlines
+var userOnline = navigator.onLine;
+//Kontrollime brauseri võimekust kasutada web storage funktsiooni
+function hasStorage{
+	if(typeof(Storage)!== "undefined"){
+	return true;
+	}
+	else{
+	return false;
+	}
+}
+*/

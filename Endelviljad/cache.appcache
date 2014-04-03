@@ -1,0 +1,31 @@
+CACHE MANIFEST
+
+# Version 1
+/about
+/home
+/register
+CACHE:
+
+#JS and CSS
+/assets/js/mainScript.js
+/assets/css/style.css
+
+#Static images
+/assets/img/bg_gradient.png
+/assets/img/bg_menu.png
+/assets/img/bg_usermenu.png
+/assets/img/endelviljad.png
+/assets/img/fruit.jpg
+/assets/img/google_sign_in.png
+/assets/img/kiwi.jpg
+/assets/img/logo.png
+/assets/img/map.png
+/assets/img/separator_menu.png
+/assets/img/strawberry.jpg
+/assets/img/us.jpg
+
+NETWORK:
+*
+
+FALLBACK:
+/ /home/index/fallback

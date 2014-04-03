@@ -11,7 +11,7 @@ body {
     background-image: url("http://endel.mt.ut.ee/assets/img/bg_gradient.png");
     background-repeat: repeat-x;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 75%;
+    font-size: 0.9em;
     min-height:100%;
     margin:0;
     padding:0;
@@ -56,7 +56,7 @@ body {
     padding-left:10px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     color:white;
-    font-size: 12px;
+    font-size: 1em;
 
 }
 .login_link{
@@ -65,7 +65,7 @@ body {
     border-left: 1px solid #dfe2e1;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     color:white;
-    font-size: 12px;
+    font-size: 1em;
 }
 .userpanel_link{
     padding-left:10px;
@@ -73,7 +73,7 @@ body {
     border-right: 1px solid #dfe2e1;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     color:white;
-    font-size: 12px; 
+    font-size:1em; 
 }
 
 .button.button{
@@ -81,7 +81,7 @@ body {
     padding: 7px 10px 8px 10px;
     margin-left: 10px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    font-size: 12px;
+    font-size:1em;
     color:white;
     vertical-align: baseline;
 }
@@ -292,7 +292,7 @@ ul#list-nav li a:hover {
 	margin-left:auto;
 	margin-right:auto;
 	width:40%;
-	display:"block";
+	display:block;
 }
 
 .register label{
@@ -340,11 +340,7 @@ ul#list-nav li a:hover {
 	margin:0.2em;
 }
 
-/* End of register_view.php styles */
-
-
 /* Footer template style */
-
 #footer {
     float: left;
     margin-top: 10px;
@@ -359,7 +355,6 @@ ul#list-nav li a:hover {
     clear:both;
     height:150px; /*the height of our footer + margin*/
 }
-
 
 #footer-info {
     float: left;

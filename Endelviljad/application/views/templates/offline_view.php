@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" manifest="<?php echo base_url("cache.appache"); ?>">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="cache.appcache">
 <!--
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
@@ -9,6 +9,8 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
         <meta name="description" content="Endel Viljad - kõik puu- ja juurviljad ühest kohast"></meta>
         <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" type="text/css"></link>
+        <script src="<?php echo base_url("assets/js/mainScript.js"); ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url("assets/js/changeUserData.js"); ?>" type="text/javascript"></script>
         <title>Endel Viljad</title>
     </head>
     <body>
@@ -36,9 +38,9 @@
                         echo '<a href="' . base_url("login") . '" class="login_link">Logi sisse</a>';
                     }
                     ?>
-                    <!-- google login button
+                    <!-- google login button-->
                     <a href="<?php echo base_url(); ?>logingoogle" class="">Click here to login with Google</a>
-					-->
+
                 </div>
                 <!-- /sign up and login buttons-->
 

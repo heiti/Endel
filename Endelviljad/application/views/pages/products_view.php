@@ -1,6 +1,9 @@
 <!--Content-->
+
+
 <div id="content"> 
     <div id="column-left">
+
 
         <?php
         echo validation_errors();
@@ -17,8 +20,12 @@
 
     </div>
     <div id="column-right">
+
+
         <div id="content-prod">
             <h1>Toodete otsing</h1>
+
+            <?php echo $pagination; ?>
             <p>
                 <?php
                 ini_set('error_reporting', E_ALL);
@@ -41,20 +48,21 @@
                 echo form_close();
 
                 foreach ($product as $prod) {
-
+                    echo '<a href="' . base_url('/product') . '?id=' . $prod->id . '">';
                     echo '<div class="product">';
-                    echo '<img src="' . base_url('/uploads/original/' . $prod->Pilt . '" height="150" align="middle">');
+                    echo '<img src="' . base_url('/application/images/thumb/' . $prod->Pilt . '" height="150" align="middle">');
                     echo '<p>Vili: ' . $prod->Vili . '</p>';
                     echo '<p>Sort: ' . $prod->Sort . '</p>';
                     echo '<p>Kategooria: ' . $prod->Kategooria . '</p>';
                     echo '<p>Hind: ' . $prod->Hind . '</p>';
                     echo '<p>Kogus: ' . $prod->Kogus . '</p>';
-                    echo '<p>Müüja: ' . $prod->username . "</p></div>";
+                    echo '<p>Müüja: ' . $prod->username . "</p></div></a>";
                 }
                 ?>
             </p>
         </div>
 
     </div>
+
 </div>
 <!--/Content-->

@@ -5,6 +5,7 @@
         <div id="content-addprod">
             <?php
             print_r($this->session->flashdata('confirmation'));
+            
             echo $error;
 
             echo validation_errors();
@@ -39,7 +40,15 @@
                 'name' => 'kogus',
                 'id' => 'kogus'
             );
-            echo form_input($data, $this->input->post('kogus')) . "</p>";
+            echo form_input($data, $this->input->post('kogus'));
+            echo '  Ühik: ';
+            $data = array(
+                'kott' => 'Kott',
+                'kast' => 'Kast',
+                'kg' => 'Kilo',
+                'karp' => 'Karp'
+            );
+            echo form_dropdown('yhik', $data).'</p>';
 
             echo "<p>Hind: ";
             $data = array(
@@ -49,7 +58,7 @@
             echo form_input($data, $this->input->post('hind')) . "</p>";
 
             echo "<p>Asukoht: ";
-            $data = array(
+            $data = array( 
                 'name' => 'asukoht',
                 'id' => 'asukoht'
             );

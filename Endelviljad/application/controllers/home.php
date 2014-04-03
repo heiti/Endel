@@ -5,10 +5,10 @@ if ( ! defined('BASEPATH'))
 
 class Home extends CI_Controller {
 
-	public function index() {
+	public function index($page = 'home') {
 	
 		$this->load->view('templates/header_temp');
-		$this->load->view('pages/home_view');
+		$this->load->view('pages/'.$page.'_view');
 		$this->load->view('templates/footer_temp');
 		
 	}
