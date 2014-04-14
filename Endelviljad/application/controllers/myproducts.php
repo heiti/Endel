@@ -16,7 +16,7 @@ class Myproducts extends CI_Controller {
         }
 
         if ($this->session->userdata('is_logged_in')) {
-            $this->load->view('templates/header_temp');
+            $this->load->view('templates/header_usr');
             $this->load->view('pages/my_products_view', $data);
             $this->load->view('templates/footer_temp');
         } else {

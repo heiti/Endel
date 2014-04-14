@@ -21,21 +21,21 @@
             'name' => 'email',
             'id' => 'email'
         );
-        echo form_input($data, $this->input->post('email')) . "</p>";
+        echo form_input($data, $this->input->post('email')) .'   '.$andmed->email. "</p>";
         
         echo '<p>Linn: ';     
         $data = array(
             'name' => 'city',
             'id' => 'city'
         );
-        echo form_input($data, $this->input->post('city')) . "</p>";
+        echo form_input($data, $this->input->post('city')).'   '.$andmed->city. "</p>";
         
         echo '<p>Aadress: ';     
         $data = array(
             'name' => 'address',
             'id' => 'address'
         );
-        echo form_input($data, $this->input->post('address')) . "</p>";
+        echo form_input($data, $this->input->post('address')).'   '.$andmed->address. "</p>";
         
         echo form_submit('Muuda', 'Muuda');
         echo form_close();

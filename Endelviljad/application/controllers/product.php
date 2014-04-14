@@ -12,7 +12,7 @@ class Product extends CI_Controller {
         $data['product'] = $this->productmodel->getSingleData($_GET['id']);
 
 
-        $this->load->view('templates/header_temp');
+        $this->load->view('templates/header_usr');
         $this->load->view('templates/product_temp', $data);
         $this->load->view('templates/footer_temp');
     }

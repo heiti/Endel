@@ -19,7 +19,7 @@ class Login extends CI_Controller {
 
     public function login() {
 
-        $this->load->view('templates/header_temp');
+        $this->load->view('templates/header_guest');
         $this->load->view('pages/login_view');
         $this->load->view('templates/footer_temp');
     }

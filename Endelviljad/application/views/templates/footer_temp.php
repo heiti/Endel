@@ -1,24 +1,18 @@
-    <div class="footer-push"></div>                
+</div>
+	<!--/#wrap wrap algab headeris ja aitab hoida footerit lehe all-->
+		<!--Start #footer-->
 		<div id="footer">
-			<div id="footer-info">
-				<br/> AS Endel Viljad
-				<br/> Lao tn 3, 80045, Tartu, Eesti
-				<br/> endel@viljad.ee
-			</div>
-			
-			<div id="footer-map">
-				<p>
-					<img src="<?php echo base_url("assets/img/map.png");?>" height="130" alt="Meie asukoht kaardil"/>
-				</p>
-			</div>
-			
+		  <div class="container">
+			<p class="text-muted text-center">
+				&copy; Endel Viljad OÜ<br />
+				<a href="<?php echo base_url("about") ?>">Kontakt</a>
+			</p>
+		  </div>
 		</div>
-			
-		<div id="bottom"></div>
-		
-	</div>
-	<!-- /End container -->
-<script src="<?php echo base_url("assets/js/mainScript.js"); ?>" type="text/javascript"></script>
-<script src="<?php echo base_url("assets/js/changeUserData.js"); ?>" type="text/javascript"></script>
-</body>
+		<!--/footer-->
+	<script type="text/javascript" src="<?php echo base_url("assets/js/mainScript.js"); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url("assets/js/changeUserData.js"); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url("assets/js/jquery.js");?>"></script>
+	<script type="text/javascript" src="<?php echo base_url("assets/js/jquery.validate.js");?>"></script>
+	</body>	
 </html>

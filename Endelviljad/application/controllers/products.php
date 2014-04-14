@@ -12,7 +12,7 @@ class Products extends CI_Controller {
         if ($this->session->userdata('is_logged_in')) {
             $this->load->library('javascript');
             $this->load->model('productsmodel');
-            $this->load->view('templates/header_temp');
+            $this->load->view('templates/header_usr');
             
             
             //pagination + products_view         
@@ -54,7 +54,7 @@ class Products extends CI_Controller {
             $sort = $this->input->post('sorting');
             $this->load->model('productsmodel');
 
-            $this->load->view('templates/header_temp');
+            $this->load->view('templates/header_usr');
 
             //pagination + products_view         
             $databaseinfo = $this->productsmodel->getData($searchfield, $viljad);

@@ -21,7 +21,7 @@ class AddProduct extends CI_Controller {
                 'error' => ""
             );
             $this->load->model('add_product_model');
-            $this->load->view('templates/header_temp');
+            $this->load->view('templates/header_usr');
             $this->load->view('pages/add_product_view', $data);
             $this->load->view('templates/footer_temp');
         } else {
@@ -60,7 +60,7 @@ class AddProduct extends CI_Controller {
                 $data = array(
                     'error' => $this->upload->display_errors()
                 );
-                $this->load->view('templates/header_temp');
+                $this->load->view('templates/header_usr');
                 $this->load->view('pages/add_product_view', $data);
                 $this->load->view('templates/footer_temp');
             } else {
@@ -99,7 +99,7 @@ class AddProduct extends CI_Controller {
                     $data = array(
                         'error' => $this->upload->display_errors()
                     );
-                    $this->load->view('templates/header_temp');
+                    $this->load->view('templates/header_usr');
                     $this->load->view('pages/add_product_view', $data);
                     $this->load->view('templates/footer_temp');
                 }

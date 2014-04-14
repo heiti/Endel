@@ -1,12 +1,13 @@
 CACHE MANIFEST
 
 # Version 1
-/fallback
+
 CACHE:
 
 #JS and CSS
 /assets/js/mainScript.js
 /assets/css/style.css
+/assets/css/bootstrap.css
 
 #Static images
 /assets/img/bg_gradient.png

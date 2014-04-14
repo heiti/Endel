@@ -283,6 +283,19 @@ ul#list-nav li a:hover {
     font-size: 1em;
     color: #000000;
 }
+#content-product-left{
+    float: left;
+    width: 550px;
+    margin: 25px auto;
+    padding: 25px;
+}
+#content-product-right{
+    float: right;
+    width: 300px;
+    margin: 25px auto;
+    padding: 25px;
+    text-align: left;
+}
 
 /*Register_view.php styles */
 

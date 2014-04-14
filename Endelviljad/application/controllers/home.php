@@ -6,8 +6,13 @@ if ( ! defined('BASEPATH'))
 class Home extends CI_Controller {
 
 	public function index($page = 'home') {
-	
-		$this->load->view('templates/header_temp');
+		
+		if ($this->session->userdata('is_logged_in')) {
+        	$this->load->view('templates/header_usr');
+        } 
+    	else {
+            $this->load->view('templates/header_guest');
+        }
 		$this->load->view('pages/'.$page.'_view');
 		$this->load->view('templates/footer_temp');
 		

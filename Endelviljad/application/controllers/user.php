@@ -5,8 +5,10 @@ class User extends CI_Controller {
 
     public function index() {
         if ($this->session->userdata('is_logged_in')) {
-            $this->load->view('templates/header_temp');
-            $this->load->view('pages/user_view');
+            $this->load->model('usermodel');
+            $data['andmed'] = $this->usermodel->getData($this->session->userdata('id'));
+            $this->load->view('templates/header_usr');
+            $this->load->view('pages/user_view', $data);
             $this->load->view('templates/footer_temp');
         } else {
             $this->session->set_userdata('redirect', 'user'); //salvestab selle lehe, et logimisel tagasi redirectiks

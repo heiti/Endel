@@ -14,11 +14,14 @@
                 ini_set('error_reporting', E_ALL);
                 ini_set('display_errors', 'On');  //On or Off
                 echo $message;
+                
                 $this->table->set_heading(array('', 'Vili', 'Sort', 'Kategooria', 'Kogus', 'Hind', 'Asukoht'));
                 foreach ($products as $prod) {
                     $this->table->add_row($prod);
                 }
-                echo $this->table->generate();
+                if ($message == '') {
+                    echo $this->table->generate();
+                }
                 echo form_open('addproduct');
                 echo form_submit('lisatoode', 'Lisa uus toode');
                 echo form_close();

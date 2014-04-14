@@ -24,7 +24,7 @@ class Transactions extends CI_Controller {
         );
            //$data['info'] = $this->users_model->getuserinfo($this->session->userdata('email'));
 
-            $this->load->view('templates/header_temp');
+            $this->load->view('templates/header_usr');
             $this->load->view('pages/transactions_view', $this->sessiondata);
             $this->load->view('templates/footer_temp');
         } else {

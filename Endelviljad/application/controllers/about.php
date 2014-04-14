@@ -10,9 +10,15 @@ class About extends CI_Controller {
     public function index() {
         $this->load->model('aboutmodel');
         $data['info'] = $this->aboutmodel->getInfo();
-        $this->load->view('templates/header_temp');
-        $this->load->view('pages/about_view', $data);
-        $this->load->view('templates/footer_temp');
+        
+        if ($this->session->userdata('is_logged_in')) {
+        	$this->load->view('templates/header_usr');
+        } 
+    	else {
+            $this->load->view('templates/header_guest');
+        }
+		$this->load->view('pages/about_view', $data);
+		$this->load->view('templates/footer_temp');
     }
 
 }
