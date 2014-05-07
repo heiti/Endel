@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Õnnestunud registreerimine.html">Õnnestunud registreerimine</a></td></tr>
+<tr><td><a href="Registreerimisvormi väljade kontroll toimib.html">Registreerimisvormi väljade kontroll toimib</a></td></tr>
+<tr><td><a href="Õnnestunud sõnumisaatmine.html">Õnnestunud sõnumisaatmine</a></td></tr>
+<tr><td><a href="Saada sõnum AJAX testimine emaili lahtri peale.html">Saada sõnum AJAX testimine emaili lahtri peale</a></td></tr>
+<tr><td><a href="Autoriseerimine.html">Autoriseerimine</a></td></tr>
+<tr><td><a href="Autentimine.html">Autentimine</a></td></tr>
+<tr><td><a href="Toote ostmine ja tehingu kirje ilmumine minu tehingud alla.html">Toote ostmine ja tehingu kirje ilmumine minu tehingud alla</a></td></tr>
+<tr><td><a href="Toote lisamine ja vastava kirje tekkimine minu toodete alla(path pildile tuleb panna enda arvutis mõnele pildidle suunama).html">Toote lisamine ja vastava kirje tekkimine minu toodete alla(path pildile tuleb panna enda arvutis mõnele pildidle suunama)</a></td></tr>
+</tbody></table>
+</body>
+</html>
