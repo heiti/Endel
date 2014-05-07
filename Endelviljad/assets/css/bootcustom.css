@@ -1,0 +1,43 @@
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.img-responsive-center{
+margin-left: auto; /*Heiti-Et pilt oleks keskel*/
+margin-right: auto;
+}
+.glyphicon{ /*Heiti-Suurendasin menüü ikoone*/
+font-size:18px;
+}
+abbr[title], /*Heiti-ikoondel kursor käe kujuline*/
+abbr[data-original-title] {
+  cursor: pointer;
+  border-bottom: 1px dotted #999;
+}
+.input-err{		/*Input kasti taust punane, kui tuvastatakse error*/
+	background: rgb(255, 186, 186); /*Fall-back for browsers that don't support rgba */
+    background: rgba(255, 0, 0, 0.2);
+}
